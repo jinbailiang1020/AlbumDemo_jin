@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+         android:scaleType="centerCrop"
+        android:id="@+id/imageview"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/album_default" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/root"
+        android:layout_below="@+id/root"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="0张"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageview"
+        android:layout_toRightOf="@+id/imageview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:lines="1"
+        android:text="目录"
+        android:textSize="20sp" />
+
+</RelativeLayout>
